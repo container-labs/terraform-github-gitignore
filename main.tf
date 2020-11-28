@@ -30,6 +30,10 @@ data "local_file" "osx" {
     filename = "${path.module}/generated-files/osx"
 }
 
+data "local_file" "terraform" {
+    filename = "${path.module}/generated-files/terraform"
+}
+
 data "local_file" "unity" {
     filename = "${path.module}/generated-files/unity"
 }
@@ -39,12 +43,14 @@ locals {
   flutter = contains(var.ignores, "flutter") ? data.local_file.flutter.content : ""
   node = contains(var.ignores, "node") ? data.local_file.node.content : ""
   osx = contains(var.ignores, "osx") ? data.local_file.osx.content : ""
+  terraform = contains(var.ignores, "terraform") ? data.local_file.terraform.content : ""
   unity = contains(var.ignores, "unity") ? data.local_file.unity.content : ""
 
   content = join("\n", [
     local.gitignore_base,
     local.flutter,
     local.node,
+    local.terraform,
     local.osx,
     local.unity
   ])
