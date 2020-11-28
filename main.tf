@@ -30,6 +30,10 @@ data "local_file" "flutter" {
   filename = "${path.module}/generated-files/flutter"
 }
 
+data "local_file" "java" {
+  filename = "${path.module}/generated-files/java"
+}
+
 data "local_file" "node" {
     filename = "${path.module}/generated-files/node"
 }
@@ -63,6 +67,7 @@ locals {
   adobe = contains(var.ignores, "adobe") ? data.local_file.adobe.content : ""
   android-studio = contains(var.ignores, "android-studio") ? data.local_file.android-studio.content : ""
   flutter = contains(var.ignores, "flutter") ? data.local_file.flutter.content : ""
+  java = contains(var.ignores, "java") ? data.local_file.java.content : ""
   node = contains(var.ignores, "node") ? data.local_file.node.content : ""
   osx = contains(var.ignores, "osx") ? data.local_file.osx.content : ""
   terraform = contains(var.ignores, "terraform") ? data.local_file.terraform.content : ""
@@ -76,6 +81,7 @@ locals {
     local.adobe,
     local.android-studio,
     local.flutter,
+    local.java,
     local.node,
     local.terraform,
     local.osx,
