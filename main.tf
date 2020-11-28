@@ -46,6 +46,14 @@ data "local_file" "unity" {
     filename = "${path.module}/generated-files/unity"
 }
 
+data "local_file" "visual-studio" {
+    filename = "${path.module}/generated-files/visual-studio"
+}
+
+data "local_file" "visual-studio-code" {
+    filename = "${path.module}/generated-files/visual-studio-code"
+}
+
 data "local_file" "windows" {
     filename = "${path.module}/generated-files/windows"
 }
@@ -59,6 +67,8 @@ locals {
   osx = contains(var.ignores, "osx") ? data.local_file.osx.content : ""
   terraform = contains(var.ignores, "terraform") ? data.local_file.terraform.content : ""
   unity = contains(var.ignores, "unity") ? data.local_file.unity.content : ""
+  visual-studio = contains(var.ignores, "visual-studio") ? data.local_file.visual-studio.content : ""
+  visual-studio-code = contains(var.ignores, "visual-studio-code") ? data.local_file.visual-studio-code.content : ""
   windows = contains(var.ignores, "windows") ? data.local_file.windows.content : ""
 
   content = join("\n", [
@@ -70,6 +80,8 @@ locals {
     local.terraform,
     local.osx,
     local.unity,
+    local.visual-studio,
+    local.visual-studio-code,
     local.windows
   ])
 }
