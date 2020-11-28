@@ -24,7 +24,7 @@ File.open("locals.tf", "w") { |f|
   ignores.each do|ignore|
     f.puts "  #{ignore} = contains(var.ignores, \"#{ignore}\") ? data.local_file.#{ignore}.content : \"\""
   end
-  f.puts "  content = join(\"\\n\", unique(["
+  f.puts "  content = join(\"\\n\", distinct(["
   ignores.each do|ignore|
     f.puts "    local.#{ignore},"
   end

@@ -492,7 +492,7 @@ locals {
   zig = contains(var.ignores, "zig") ? data.local_file.zig.content : ""
   zsh = contains(var.ignores, "zsh") ? data.local_file.zsh.content : ""
   zukencr8000n = contains(var.ignores, "zukencr8000n") ? data.local_file.zukencr8000n.content : ""
-  content = join("\n", unique([
+  content = join("\n", distinct([
     local.a-frame,
     local.actionscript,
     local.ada,
