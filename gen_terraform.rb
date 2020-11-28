@@ -25,6 +25,7 @@ File.open("locals.tf", "w") { |f|
     f.puts "  #{ignore} = contains(var.ignores, \"#{ignore}\") ? data.local_file.#{ignore}.content : \"\""
   end
   f.puts "  content = join(\"\\n\", distinct(["
+  f.puts "    local.gitignore_base,"
   ignores.each do|ignore|
     f.puts "    local.#{ignore},"
   end
