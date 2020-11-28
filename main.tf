@@ -18,6 +18,10 @@ data "local_file" "gitignore_base" {
   filename = "${path.module}/gitignore_base"
 }
 
+data "local_file" "adobe" {
+  filename = "${path.module}/generated-files/adobe"
+}
+
 data "local_file" "android-studio" {
   filename = "${path.module}/generated-files/android-studio"
 }
@@ -48,6 +52,7 @@ data "local_file" "windows" {
 
 locals {
   gitignore_base = data.local_file.gitignore_base.content
+  adobe = contains(var.ignores, "adobe") ? data.local_file.adobe.content : ""
   android-studio = contains(var.ignores, "android-studio") ? data.local_file.android-studio.content : ""
   flutter = contains(var.ignores, "flutter") ? data.local_file.flutter.content : ""
   node = contains(var.ignores, "node") ? data.local_file.node.content : ""
@@ -58,6 +63,7 @@ locals {
 
   content = join("\n", [
     local.gitignore_base,
+    local.adobe,
     local.android-studio,
     local.flutter,
     local.node,
