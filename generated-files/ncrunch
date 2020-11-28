@@ -1,0 +1,13 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/ncrunch
+# Edit at https://www.toptal.com/developers/gitignore?templates=ncrunch
+
+### NCrunch ###
+# NCrunch
+*.ncrunch*
+_NCrunch_*
+*.crunch.xml
+*.ncrunchsolution*
+nCrunchTemp_*
+
+# End of https://www.toptal.com/developers/gitignore/api/ncrunch

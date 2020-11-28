@@ -1,0 +1,11 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/concrete5
+# Edit at https://www.toptal.com/developers/gitignore?templates=concrete5
+
+### Concrete5 ###
+config/site.php
+files/cache/*
+files/tmp/*
+.htaccess
+
+# End of https://www.toptal.com/developers/gitignore/api/concrete5

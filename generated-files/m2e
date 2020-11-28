@@ -1,0 +1,9 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/m2e
+# Edit at https://www.toptal.com/developers/gitignore?templates=m2e
+
+### m2e ###
+.classpath
+.project
+
+# End of https://www.toptal.com/developers/gitignore/api/m2e

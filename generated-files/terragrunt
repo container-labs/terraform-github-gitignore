@@ -1,0 +1,9 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/terragrunt
+# Edit at https://www.toptal.com/developers/gitignore?templates=terragrunt
+
+### Terragrunt ###
+# terragrunt cache directories
+**/.terragrunt-cache/*
+
+# End of https://www.toptal.com/developers/gitignore/api/terragrunt
