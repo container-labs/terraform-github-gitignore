@@ -1,11 +1,6 @@
-data "local_file" "1c" {
-  filename = "${path.module}/generated-files/1c"
+data "local_file" "gitignore_base" {
+  filename = "${path.module}/gitignore_base"
 }
-
-data "local_file" "1c-bitrix" {
-  filename = "${path.module}/generated-files/1c-bitrix"
-}
-
 data "local_file" "a-frame" {
   filename = "${path.module}/generated-files/a-frame"
 }
@@ -90,14 +85,6 @@ data "local_file" "appcode" {
   filename = "${path.module}/generated-files/appcode"
 }
 
-data "local_file" "appcode+all" {
-  filename = "${path.module}/generated-files/appcode+all"
-}
-
-data "local_file" "appcode+iml" {
-  filename = "${path.module}/generated-files/appcode+iml"
-}
-
 data "local_file" "appengine" {
   filename = "${path.module}/generated-files/appengine"
 }
@@ -152,10 +139,6 @@ data "local_file" "automationstudio" {
 
 data "local_file" "autotools" {
   filename = "${path.module}/generated-files/autotools"
-}
-
-data "local_file" "autotools+strict" {
-  filename = "${path.module}/generated-files/autotools+strict"
 }
 
 data "local_file" "awr" {
@@ -234,10 +217,6 @@ data "local_file" "c" {
   filename = "${path.module}/generated-files/c"
 }
 
-data "local_file" "c++" {
-  filename = "${path.module}/generated-files/c++"
-}
-
 data "local_file" "cake" {
   filename = "${path.module}/generated-files/cake"
 }
@@ -288,14 +267,6 @@ data "local_file" "clean" {
 
 data "local_file" "clion" {
   filename = "${path.module}/generated-files/clion"
-}
-
-data "local_file" "clion+all" {
-  filename = "${path.module}/generated-files/clion+all"
-}
-
-data "local_file" "clion+iml" {
-  filename = "${path.module}/generated-files/clion+iml"
 }
 
 data "local_file" "clojure" {
@@ -842,14 +813,6 @@ data "local_file" "intellij" {
   filename = "${path.module}/generated-files/intellij"
 }
 
-data "local_file" "intellij+all" {
-  filename = "${path.module}/generated-files/intellij+all"
-}
-
-data "local_file" "intellij+iml" {
-  filename = "${path.module}/generated-files/intellij+iml"
-}
-
 data "local_file" "ionic3" {
   filename = "${path.module}/generated-files/ionic3"
 }
@@ -900,14 +863,6 @@ data "local_file" "jenv" {
 
 data "local_file" "jetbrains" {
   filename = "${path.module}/generated-files/jetbrains"
-}
-
-data "local_file" "jetbrains+all" {
-  filename = "${path.module}/generated-files/jetbrains+all"
-}
-
-data "local_file" "jetbrains+iml" {
-  filename = "${path.module}/generated-files/jetbrains+iml"
 }
 
 data "local_file" "jgiven" {
@@ -1290,10 +1245,6 @@ data "local_file" "openframeworks" {
   filename = "${path.module}/generated-files/openframeworks"
 }
 
-data "local_file" "openframeworks+visualstudio" {
-  filename = "${path.module}/generated-files/openframeworks+visualstudio"
-}
-
 data "local_file" "oracleforms" {
   filename = "${path.module}/generated-files/oracleforms"
 }
@@ -1360,14 +1311,6 @@ data "local_file" "phpcodesniffer" {
 
 data "local_file" "phpstorm" {
   filename = "${path.module}/generated-files/phpstorm"
-}
-
-data "local_file" "phpstorm+all" {
-  filename = "${path.module}/generated-files/phpstorm+all"
-}
-
-data "local_file" "phpstorm+iml" {
-  filename = "${path.module}/generated-files/phpstorm+iml"
 }
 
 data "local_file" "phpunit" {
@@ -1466,14 +1409,6 @@ data "local_file" "pycharm" {
   filename = "${path.module}/generated-files/pycharm"
 }
 
-data "local_file" "pycharm+all" {
-  filename = "${path.module}/generated-files/pycharm+all"
-}
-
-data "local_file" "pycharm+iml" {
-  filename = "${path.module}/generated-files/pycharm+iml"
-}
-
 data "local_file" "pydev" {
   filename = "${path.module}/generated-files/pydev"
 }
@@ -1560,14 +1495,6 @@ data "local_file" "ruby" {
 
 data "local_file" "rubymine" {
   filename = "${path.module}/generated-files/rubymine"
-}
-
-data "local_file" "rubymine+all" {
-  filename = "${path.module}/generated-files/rubymine+all"
-}
-
-data "local_file" "rubymine+iml" {
-  filename = "${path.module}/generated-files/rubymine+iml"
 }
 
 data "local_file" "rust" {
@@ -1806,10 +1733,6 @@ data "local_file" "thinkphp" {
   filename = "${path.module}/generated-files/thinkphp"
 }
 
-data "local_file" "tla+" {
-  filename = "${path.module}/generated-files/tla+"
-}
-
 data "local_file" "tortoisegit" {
   filename = "${path.module}/generated-files/tortoisegit"
 }
@@ -1948,14 +1871,6 @@ data "local_file" "webmethods" {
 
 data "local_file" "webstorm" {
   filename = "${path.module}/generated-files/webstorm"
-}
-
-data "local_file" "webstorm+all" {
-  filename = "${path.module}/generated-files/webstorm+all"
-}
-
-data "local_file" "webstorm+iml" {
-  filename = "${path.module}/generated-files/webstorm+iml"
 }
 
 data "local_file" "werckercli" {

@@ -1,7 +1,5 @@
 locals {
   gitignore_base = data.local_file.gitignore_base.content
-  1c = contains(var.ignores, "1c") ? data.local_file.1c.content : ""
-  1c-bitrix = contains(var.ignores, "1c-bitrix") ? data.local_file.1c-bitrix.content : ""
   a-frame = contains(var.ignores, "a-frame") ? data.local_file.a-frame.content : ""
   actionscript = contains(var.ignores, "actionscript") ? data.local_file.actionscript.content : ""
   ada = contains(var.ignores, "ada") ? data.local_file.ada.content : ""
@@ -23,8 +21,6 @@ locals {
   appbuilder = contains(var.ignores, "appbuilder") ? data.local_file.appbuilder.content : ""
   appceleratortitanium = contains(var.ignores, "appceleratortitanium") ? data.local_file.appceleratortitanium.content : ""
   appcode = contains(var.ignores, "appcode") ? data.local_file.appcode.content : ""
-  appcode+all = contains(var.ignores, "appcode+all") ? data.local_file.appcode+all.content : ""
-  appcode+iml = contains(var.ignores, "appcode+iml") ? data.local_file.appcode+iml.content : ""
   appengine = contains(var.ignores, "appengine") ? data.local_file.appengine.content : ""
   aptanastudio = contains(var.ignores, "aptanastudio") ? data.local_file.aptanastudio.content : ""
   arcanist = contains(var.ignores, "arcanist") ? data.local_file.arcanist.content : ""
@@ -39,7 +35,6 @@ locals {
   audio = contains(var.ignores, "audio") ? data.local_file.audio.content : ""
   automationstudio = contains(var.ignores, "automationstudio") ? data.local_file.automationstudio.content : ""
   autotools = contains(var.ignores, "autotools") ? data.local_file.autotools.content : ""
-  autotools+strict = contains(var.ignores, "autotools+strict") ? data.local_file.autotools+strict.content : ""
   awr = contains(var.ignores, "awr") ? data.local_file.awr.content : ""
   backup = contains(var.ignores, "backup") ? data.local_file.backup.content : ""
   ballerina = contains(var.ignores, "ballerina") ? data.local_file.ballerina.content : ""
@@ -59,7 +54,6 @@ locals {
   bricxcc = contains(var.ignores, "bricxcc") ? data.local_file.bricxcc.content : ""
   buck = contains(var.ignores, "buck") ? data.local_file.buck.content : ""
   c = contains(var.ignores, "c") ? data.local_file.c.content : ""
-  c++ = contains(var.ignores, "c++") ? data.local_file.c++.content : ""
   cake = contains(var.ignores, "cake") ? data.local_file.cake.content : ""
   cakephp = contains(var.ignores, "cakephp") ? data.local_file.cakephp.content : ""
   cakephp2 = contains(var.ignores, "cakephp2") ? data.local_file.cakephp2.content : ""
@@ -73,8 +67,6 @@ locals {
   chocolatey = contains(var.ignores, "chocolatey") ? data.local_file.chocolatey.content : ""
   clean = contains(var.ignores, "clean") ? data.local_file.clean.content : ""
   clion = contains(var.ignores, "clion") ? data.local_file.clion.content : ""
-  clion+all = contains(var.ignores, "clion+all") ? data.local_file.clion+all.content : ""
-  clion+iml = contains(var.ignores, "clion+iml") ? data.local_file.clion+iml.content : ""
   clojure = contains(var.ignores, "clojure") ? data.local_file.clojure.content : ""
   cloud9 = contains(var.ignores, "cloud9") ? data.local_file.cloud9.content : ""
   cmake = contains(var.ignores, "cmake") ? data.local_file.cmake.content : ""
@@ -211,8 +203,6 @@ locals {
   inforcms = contains(var.ignores, "inforcms") ? data.local_file.inforcms.content : ""
   inforcrm = contains(var.ignores, "inforcrm") ? data.local_file.inforcrm.content : ""
   intellij = contains(var.ignores, "intellij") ? data.local_file.intellij.content : ""
-  intellij+all = contains(var.ignores, "intellij+all") ? data.local_file.intellij+all.content : ""
-  intellij+iml = contains(var.ignores, "intellij+iml") ? data.local_file.intellij+iml.content : ""
   ionic3 = contains(var.ignores, "ionic3") ? data.local_file.ionic3.content : ""
   jabref = contains(var.ignores, "jabref") ? data.local_file.jabref.content : ""
   java = contains(var.ignores, "java") ? data.local_file.java.content : ""
@@ -226,8 +216,6 @@ locals {
   jekyll = contains(var.ignores, "jekyll") ? data.local_file.jekyll.content : ""
   jenv = contains(var.ignores, "jenv") ? data.local_file.jenv.content : ""
   jetbrains = contains(var.ignores, "jetbrains") ? data.local_file.jetbrains.content : ""
-  jetbrains+all = contains(var.ignores, "jetbrains+all") ? data.local_file.jetbrains+all.content : ""
-  jetbrains+iml = contains(var.ignores, "jetbrains+iml") ? data.local_file.jetbrains+iml.content : ""
   jgiven = contains(var.ignores, "jgiven") ? data.local_file.jgiven.content : ""
   jigsaw = contains(var.ignores, "jigsaw") ? data.local_file.jigsaw.content : ""
   jmeter = contains(var.ignores, "jmeter") ? data.local_file.jmeter.content : ""
@@ -323,7 +311,6 @@ locals {
   opencv = contains(var.ignores, "opencv") ? data.local_file.opencv.content : ""
   openfoam = contains(var.ignores, "openfoam") ? data.local_file.openfoam.content : ""
   openframeworks = contains(var.ignores, "openframeworks") ? data.local_file.openframeworks.content : ""
-  openframeworks+visualstudio = contains(var.ignores, "openframeworks+visualstudio") ? data.local_file.openframeworks+visualstudio.content : ""
   oracleforms = contains(var.ignores, "oracleforms") ? data.local_file.oracleforms.content : ""
   orcad = contains(var.ignores, "orcad") ? data.local_file.orcad.content : ""
   osx = contains(var.ignores, "osx") ? data.local_file.osx.content : ""
@@ -341,8 +328,6 @@ locals {
   phoenix = contains(var.ignores, "phoenix") ? data.local_file.phoenix.content : ""
   phpcodesniffer = contains(var.ignores, "phpcodesniffer") ? data.local_file.phpcodesniffer.content : ""
   phpstorm = contains(var.ignores, "phpstorm") ? data.local_file.phpstorm.content : ""
-  phpstorm+all = contains(var.ignores, "phpstorm+all") ? data.local_file.phpstorm+all.content : ""
-  phpstorm+iml = contains(var.ignores, "phpstorm+iml") ? data.local_file.phpstorm+iml.content : ""
   phpunit = contains(var.ignores, "phpunit") ? data.local_file.phpunit.content : ""
   pico8 = contains(var.ignores, "pico8") ? data.local_file.pico8.content : ""
   pimcore = contains(var.ignores, "pimcore") ? data.local_file.pimcore.content : ""
@@ -367,8 +352,6 @@ locals {
   putty = contains(var.ignores, "putty") ? data.local_file.putty.content : ""
   pvs = contains(var.ignores, "pvs") ? data.local_file.pvs.content : ""
   pycharm = contains(var.ignores, "pycharm") ? data.local_file.pycharm.content : ""
-  pycharm+all = contains(var.ignores, "pycharm+all") ? data.local_file.pycharm+all.content : ""
-  pycharm+iml = contains(var.ignores, "pycharm+iml") ? data.local_file.pycharm+iml.content : ""
   pydev = contains(var.ignores, "pydev") ? data.local_file.pydev.content : ""
   python = contains(var.ignores, "python") ? data.local_file.python.content : ""
   qml = contains(var.ignores, "qml") ? data.local_file.qml.content : ""
@@ -391,8 +374,6 @@ locals {
   ros = contains(var.ignores, "ros") ? data.local_file.ros.content : ""
   ruby = contains(var.ignores, "ruby") ? data.local_file.ruby.content : ""
   rubymine = contains(var.ignores, "rubymine") ? data.local_file.rubymine.content : ""
-  rubymine+all = contains(var.ignores, "rubymine+all") ? data.local_file.rubymine+all.content : ""
-  rubymine+iml = contains(var.ignores, "rubymine+iml") ? data.local_file.rubymine+iml.content : ""
   rust = contains(var.ignores, "rust") ? data.local_file.rust.content : ""
   salesforce = contains(var.ignores, "salesforce") ? data.local_file.salesforce.content : ""
   salesforcedx = contains(var.ignores, "salesforcedx") ? data.local_file.salesforcedx.content : ""
@@ -452,7 +433,6 @@ locals {
   textpattern = contains(var.ignores, "textpattern") ? data.local_file.textpattern.content : ""
   theos-tweak = contains(var.ignores, "theos-tweak") ? data.local_file.theos-tweak.content : ""
   thinkphp = contains(var.ignores, "thinkphp") ? data.local_file.thinkphp.content : ""
-  tla+ = contains(var.ignores, "tla+") ? data.local_file.tla+.content : ""
   tortoisegit = contains(var.ignores, "tortoisegit") ? data.local_file.tortoisegit.content : ""
   tower = contains(var.ignores, "tower") ? data.local_file.tower.content : ""
   turbogears2 = contains(var.ignores, "turbogears2") ? data.local_file.turbogears2.content : ""
@@ -488,8 +468,6 @@ locals {
   web = contains(var.ignores, "web") ? data.local_file.web.content : ""
   webmethods = contains(var.ignores, "webmethods") ? data.local_file.webmethods.content : ""
   webstorm = contains(var.ignores, "webstorm") ? data.local_file.webstorm.content : ""
-  webstorm+all = contains(var.ignores, "webstorm+all") ? data.local_file.webstorm+all.content : ""
-  webstorm+iml = contains(var.ignores, "webstorm+iml") ? data.local_file.webstorm+iml.content : ""
   werckercli = contains(var.ignores, "werckercli") ? data.local_file.werckercli.content : ""
   windows = contains(var.ignores, "windows") ? data.local_file.windows.content : ""
   wintersmith = contains(var.ignores, "wintersmith") ? data.local_file.wintersmith.content : ""
@@ -515,8 +493,6 @@ locals {
   zsh = contains(var.ignores, "zsh") ? data.local_file.zsh.content : ""
   zukencr8000n = contains(var.ignores, "zukencr8000n") ? data.local_file.zukencr8000n.content : ""
   content = join("\n",[
-    local.1c,
-    local.1c-bitrix,
     local.a-frame,
     local.actionscript,
     local.ada,
@@ -538,8 +514,6 @@ locals {
     local.appbuilder,
     local.appceleratortitanium,
     local.appcode,
-    local.appcode+all,
-    local.appcode+iml,
     local.appengine,
     local.aptanastudio,
     local.arcanist,
@@ -554,7 +528,6 @@ locals {
     local.audio,
     local.automationstudio,
     local.autotools,
-    local.autotools+strict,
     local.awr,
     local.backup,
     local.ballerina,
@@ -574,7 +547,6 @@ locals {
     local.bricxcc,
     local.buck,
     local.c,
-    local.c++,
     local.cake,
     local.cakephp,
     local.cakephp2,
@@ -588,8 +560,6 @@ locals {
     local.chocolatey,
     local.clean,
     local.clion,
-    local.clion+all,
-    local.clion+iml,
     local.clojure,
     local.cloud9,
     local.cmake,
@@ -726,8 +696,6 @@ locals {
     local.inforcms,
     local.inforcrm,
     local.intellij,
-    local.intellij+all,
-    local.intellij+iml,
     local.ionic3,
     local.jabref,
     local.java,
@@ -741,8 +709,6 @@ locals {
     local.jekyll,
     local.jenv,
     local.jetbrains,
-    local.jetbrains+all,
-    local.jetbrains+iml,
     local.jgiven,
     local.jigsaw,
     local.jmeter,
@@ -838,7 +804,6 @@ locals {
     local.opencv,
     local.openfoam,
     local.openframeworks,
-    local.openframeworks+visualstudio,
     local.oracleforms,
     local.orcad,
     local.osx,
@@ -856,8 +821,6 @@ locals {
     local.phoenix,
     local.phpcodesniffer,
     local.phpstorm,
-    local.phpstorm+all,
-    local.phpstorm+iml,
     local.phpunit,
     local.pico8,
     local.pimcore,
@@ -882,8 +845,6 @@ locals {
     local.putty,
     local.pvs,
     local.pycharm,
-    local.pycharm+all,
-    local.pycharm+iml,
     local.pydev,
     local.python,
     local.qml,
@@ -906,8 +867,6 @@ locals {
     local.ros,
     local.ruby,
     local.rubymine,
-    local.rubymine+all,
-    local.rubymine+iml,
     local.rust,
     local.salesforce,
     local.salesforcedx,
@@ -967,7 +926,6 @@ locals {
     local.textpattern,
     local.theos-tweak,
     local.thinkphp,
-    local.tla+,
     local.tortoisegit,
     local.tower,
     local.turbogears2,
@@ -1003,8 +961,6 @@ locals {
     local.web,
     local.webmethods,
     local.webstorm,
-    local.webstorm+all,
-    local.webstorm+iml,
     local.werckercli,
     local.windows,
     local.wintersmith,

@@ -6,6 +6,9 @@ ignores.sort!
 
 # generate terraform data resources
 File.open("data.tf", "w") { |f|
+  f.puts "data \"local_file\" \"gitignore_base\" {"
+  f.puts "  filename = \"${path.module}/gitignore_base\""
+  f.puts '}'
   ignores.each do|ignore|
     f.puts "data \"local_file\" \"#{ignore}\" {"
     f.puts "  filename = \"${path.module}/generated-files/#{ignore}\""
