@@ -4,7 +4,7 @@ set +ex
 
 # TODO: fix, remove ignores w/ plusses for now
 
-IN=`cat list | grep -v +  | tr "\n" ","`
+IN=`cat gi-list  | tr "\n" ","`
 # Set the delimiter
 IFS=','
 #Read the split words into an array based on space delimiter

@@ -54,10 +54,6 @@ data "local_file" "android" {
   filename = "${path.module}/generated-files/android"
 }
 
-data "local_file" "android-studio" {
-  filename = "${path.module}/generated-files/android-studio"
-}
-
 data "local_file" "androidstudio" {
   filename = "${path.module}/generated-files/androidstudio"
 }
@@ -1896,14 +1892,6 @@ data "local_file" "virtualenv" {
 
 data "local_file" "virtuoso" {
   filename = "${path.module}/generated-files/virtuoso"
-}
-
-data "local_file" "visual-studio" {
-  filename = "${path.module}/generated-files/visual-studio"
-}
-
-data "local_file" "visual-studio-code" {
-  filename = "${path.module}/generated-files/visual-studio-code"
 }
 
 data "local_file" "visualstudio" {

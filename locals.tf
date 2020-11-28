@@ -14,7 +14,6 @@ locals {
   altium = contains(var.ignores, "altium") ? data.local_file.altium.content : ""
   amplify = contains(var.ignores, "amplify") ? data.local_file.amplify.content : ""
   android = contains(var.ignores, "android") ? data.local_file.android.content : ""
-  android-studio = contains(var.ignores, "android-studio") ? data.local_file.android-studio.content : ""
   androidstudio = contains(var.ignores, "androidstudio") ? data.local_file.androidstudio.content : ""
   angular = contains(var.ignores, "angular") ? data.local_file.angular.content : ""
   anjuta = contains(var.ignores, "anjuta") ? data.local_file.anjuta.content : ""
@@ -475,8 +474,6 @@ locals {
   vim = contains(var.ignores, "vim") ? data.local_file.vim.content : ""
   virtualenv = contains(var.ignores, "virtualenv") ? data.local_file.virtualenv.content : ""
   virtuoso = contains(var.ignores, "virtuoso") ? data.local_file.virtuoso.content : ""
-  visual-studio = contains(var.ignores, "visual-studio") ? data.local_file.visual-studio.content : ""
-  visual-studio-code = contains(var.ignores, "visual-studio-code") ? data.local_file.visual-studio-code.content : ""
   visualstudio = contains(var.ignores, "visualstudio") ? data.local_file.visualstudio.content : ""
   visualstudiocode = contains(var.ignores, "visualstudiocode") ? data.local_file.visualstudiocode.content : ""
   vivado = contains(var.ignores, "vivado") ? data.local_file.vivado.content : ""
@@ -532,7 +529,6 @@ locals {
     local.altium,
     local.amplify,
     local.android,
-    local.android-studio,
     local.androidstudio,
     local.angular,
     local.anjuta,
@@ -993,8 +989,6 @@ locals {
     local.vim,
     local.virtualenv,
     local.virtuoso,
-    local.visual-studio,
-    local.visual-studio-code,
     local.visualstudio,
     local.visualstudiocode,
     local.vivado,
