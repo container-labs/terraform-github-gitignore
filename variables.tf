@@ -1,5 +1,5 @@
 variable "ignores" {
-  type = list
+  type = list(any)
   validation {
     condition = (
       length(var.ignores) > 0
