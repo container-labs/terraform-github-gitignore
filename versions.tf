@@ -1,9 +1,7 @@
 terraform {
   required_providers {
     github = {
-      source = "integrations/github"
-      # check back for 3.0
-      # https://github.com/terraform-providers/terraform-provider-github/blob/master/CHANGELOG.md
+      source  = "integrations/github"
       version = "~> 4.4"
     }
   }
